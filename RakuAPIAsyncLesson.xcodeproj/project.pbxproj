@@ -16,6 +16,7 @@
 		546D8816274BCB8A00ED00BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546D8814274BCB8A00ED00BC /* LaunchScreen.storyboard */; };
 		546D881F274BCD3400ED00BC /* SearchReaultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546D881D274BCD3400ED00BC /* SearchReaultCell.swift */; };
 		546D8820274BCD3400ED00BC /* SearchReaultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 546D881E274BCD3400ED00BC /* SearchReaultCell.xib */; };
+		546D8825274BCF5F00ED00BC /* getDataDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546D8824274BCF5F00ED00BC /* getDataDetailModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		546D8817274BCB8A00ED00BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		546D881D274BCD3400ED00BC /* SearchReaultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchReaultCell.swift; sourceTree = "<group>"; };
 		546D881E274BCD3400ED00BC /* SearchReaultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchReaultCell.xib; sourceTree = "<group>"; };
+		546D8824274BCF5F00ED00BC /* getDataDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getDataDetailModel.swift; sourceTree = "<group>"; };
 		EF7CC4278AE0A92CD00ECA73 /* Pods_RakuAPIAsyncLesson.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RakuAPIAsyncLesson.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -69,15 +71,40 @@
 			children = (
 				546D8809274BCB8800ED00BC /* AppDelegate.swift */,
 				546D880B274BCB8800ED00BC /* SceneDelegate.swift */,
-				546D880D274BCB8800ED00BC /* ViewController.swift */,
-				546D880F274BCB8800ED00BC /* Main.storyboard */,
-				546D8812274BCB8A00ED00BC /* Assets.xcassets */,
+				546D8823274BCF3C00ED00BC /* Model */,
+				546D8821274BCF2200ED00BC /* View */,
+				546D8822274BCF2E00ED00BC /* Controller */,
 				546D8814274BCB8A00ED00BC /* LaunchScreen.storyboard */,
 				546D8817274BCB8A00ED00BC /* Info.plist */,
-				546D881D274BCD3400ED00BC /* SearchReaultCell.swift */,
-				546D881E274BCD3400ED00BC /* SearchReaultCell.xib */,
 			);
 			path = RakuAPIAsyncLesson;
+			sourceTree = "<group>";
+		};
+		546D8821274BCF2200ED00BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				546D881D274BCD3400ED00BC /* SearchReaultCell.swift */,
+				546D881E274BCD3400ED00BC /* SearchReaultCell.xib */,
+				546D880F274BCB8800ED00BC /* Main.storyboard */,
+				546D8812274BCB8A00ED00BC /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		546D8822274BCF2E00ED00BC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				546D880D274BCB8800ED00BC /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		546D8823274BCF3C00ED00BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				546D8824274BCF5F00ED00BC /* getDataDetailModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		60B4D5D43DAE39B5DFF00FE8 /* Pods */ = {
@@ -217,6 +244,7 @@
 				546D880E274BCB8800ED00BC /* ViewController.swift in Sources */,
 				546D880A274BCB8800ED00BC /* AppDelegate.swift in Sources */,
 				546D880C274BCB8800ED00BC /* SceneDelegate.swift in Sources */,
+				546D8825274BCF5F00ED00BC /* getDataDetailModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
