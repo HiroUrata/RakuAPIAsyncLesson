@@ -47,6 +47,12 @@
                 <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="itemCaptionView" destination="SOi-uQ-0ik" id="M7S-HN-1ic"/>
+                <outlet property="itemNameLabel" destination="KTE-RL-P7W" id="BjF-CT-Gda"/>
+                <outlet property="itemPriceLabel" destination="bq8-UV-EnR" id="zDG-bm-Df3"/>
+                <outlet property="mediumImageView" destination="uOo-1m-Q9z" id="nxu-6T-I1B"/>
+            </connections>
             <point key="canvasLocation" x="137.68115942028987" y="206.58482142857142"/>
         </tableViewCell>
     </objects>

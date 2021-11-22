@@ -9,6 +9,10 @@ import UIKit
 
 class SearchReaultCell: UITableViewCell {
 
+    @IBOutlet weak var mediumImageView: UIImageView!
+    @IBOutlet weak var itemNameLabel: UILabel!
+    @IBOutlet weak var itemPriceLabel: UILabel!
+    @IBOutlet weak var itemCaptionView: UITextView!
     
     
     override func awakeFromNib() {
@@ -22,4 +26,17 @@ class SearchReaultCell: UITableViewCell {
         
     }
     
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        mediumImageView.image = UIImage(named: "")
+        itemNameLabel.text = ""
+        itemPriceLabel.text = ""
+        itemCaptionView.text = ""
+    }
 }
