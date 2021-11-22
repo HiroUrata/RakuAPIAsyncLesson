@@ -6,10 +6,10 @@
 //
 
 
-struct getDataDetailModel{
+struct GetDataDetailModel{
     
     let mediumImageURL:String?
     let itemName:String?
-    let itemPrice:String?
+    let itemPrice:Int?
     let itemCaption:String?
 }

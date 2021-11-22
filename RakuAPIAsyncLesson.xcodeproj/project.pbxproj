@@ -17,6 +17,7 @@
 		546D881F274BCD3400ED00BC /* SearchReaultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546D881D274BCD3400ED00BC /* SearchReaultCell.swift */; };
 		546D8820274BCD3400ED00BC /* SearchReaultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 546D881E274BCD3400ED00BC /* SearchReaultCell.xib */; };
 		546D8825274BCF5F00ED00BC /* getDataDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546D8824274BCF5F00ED00BC /* getDataDetailModel.swift */; };
+		546D8827274BCFEA00ED00BC /* AlamofireProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546D8826274BCFEA00ED00BC /* AlamofireProcess.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		546D881D274BCD3400ED00BC /* SearchReaultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchReaultCell.swift; sourceTree = "<group>"; };
 		546D881E274BCD3400ED00BC /* SearchReaultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchReaultCell.xib; sourceTree = "<group>"; };
 		546D8824274BCF5F00ED00BC /* getDataDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getDataDetailModel.swift; sourceTree = "<group>"; };
+		546D8826274BCFEA00ED00BC /* AlamofireProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireProcess.swift; sourceTree = "<group>"; };
 		EF7CC4278AE0A92CD00ECA73 /* Pods_RakuAPIAsyncLesson.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RakuAPIAsyncLesson.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				546D8824274BCF5F00ED00BC /* getDataDetailModel.swift */,
+				546D8826274BCFEA00ED00BC /* AlamofireProcess.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				546D880E274BCB8800ED00BC /* ViewController.swift in Sources */,
 				546D880A274BCB8800ED00BC /* AppDelegate.swift in Sources */,
 				546D880C274BCB8800ED00BC /* SceneDelegate.swift in Sources */,
+				546D8827274BCFEA00ED00BC /* AlamofireProcess.swift in Sources */,
 				546D8825274BCF5F00ED00BC /* getDataDetailModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
