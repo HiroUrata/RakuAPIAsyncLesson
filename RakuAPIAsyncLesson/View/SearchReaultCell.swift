@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SearchReaultCell: UITableViewCell {
+class SearchResultCell: UITableViewCell {
 
     @IBOutlet weak var mediumImageView: UIImageView!
     @IBOutlet weak var itemNameLabel: UILabel!

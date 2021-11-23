@@ -10,16 +10,20 @@ import SwiftyJSON
 
 class AlamofireProcess{
 
-    private var getDataResultArray = [GetDataDetailModel]()
+    public var getDataResultArray = [GetDataDetailModel]()
+    private var keyword:String?
+    
+    init(getKey:String?){
+        
+        keyword = getKey
+    }
 }
 
 extension AlamofireProcess{
     
-    public func getItemDetailData(searchKey:String?,completion: @escaping ([GetDataDetailModel]?,Error?) -> Void){
+    public func getItemDetailData(completion: @escaping() -> Void){
         
-//        let semaphore = DispatchSemaphore(value: 0)
-        
-        guard let key = searchKey else { return }
+        guard let key = keyword else { return }
         
         let apiKey = "https://app.rakuten.co.jp/services/api/IchibaItem/Search/20170706?format=json&keyword=\(key.urlEncoded)&アプリID"
         
@@ -43,19 +47,14 @@ extension AlamofireProcess{
                                                                      itemName: getItemName,
                                                                      itemPrice: getItemPrice,
                                                                      itemCaption: getItemCaption))
-//                        if dataCount == jsonDetail["Items"].count{
-//
-//                            semaphore.signal()
-//                        }
                     }
                     
                 }
-                //semaphore.wait()
-                completion(getDataResultArray, nil)
+                completion()
+               
+            case .failure:
                 
-            case .failure(let error):
-                
-                completion(nil, error)
+                completion()
             }
         }
     }
