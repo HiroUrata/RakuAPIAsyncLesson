@@ -75,7 +75,7 @@ extension ViewController:UITableViewDataSource{
         
         cell.mediumImageView.sd_setImage(with: URL(string: cellContentsArray[indexPath.row].mediumImageURL!), completed: nil)
         cell.itemNameLabel.text = cellContentsArray[indexPath.row].itemName
-        cell.itemPriceLabel.text = String(cellContentsArray[indexPath.row].itemPrice!)
+        cell.itemPriceLabel.text = String(cellContentsArray[indexPath.row].itemPrice!) + "円"
         cell.itemCaptionView.text = cellContentsArray[indexPath.row].itemCaption
         
         return cell
